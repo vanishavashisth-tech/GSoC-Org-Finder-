@@ -450,15 +450,20 @@
   }
 
   /* Filter chips (Veterans, Newcomers etc.) */
-  .filter-chip {
-    font-size: 13px;
-    padding: 8px 14px;
-    min-height: 44px;
-    touch-action: manipulation;
-    flex: 1 1 calc(50% - 10px);
-    justify-content: center;
-    text-align: center;
-  }
+ .filter-chip {
+  font-size: 13px;
+  padding: 8px 14px;
+  min-height: 44px;
+  touch-action: manipulation;
+  flex: 1 1 calc(50% - 10px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  box-sizing: border-box;
+}
 
   /* Stack dropdowns vertically - scoped to filter row only */
   
@@ -481,17 +486,15 @@
 
 @media (max-width: 480px) {
 
-  .pill {
-    font-size: 12px;
-    padding: 5px 10px;
-    min-height: 44px;
-  }
-
-  .filter-chip {
-    font-size: 12px;
-    padding: 6px 10px;
-    min-height: 44px;
-  }
+.pill,
+.filter-chip {
+  font-size: 12px;
+  padding: 5px 10px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
 /* ===== END MOBILE FILTER FIX ===== */
