@@ -755,21 +755,32 @@
   /* Language pills */
   .pill {
     font-size: 13px;
-    padding: 6px 12px;
+    padding: 10px 12px;
     min-height: 44px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
     touch-action: manipulation;
+    box-sizing: border-box;
   }
 
-  /* Filter chips (Veterans, Newcomers etc.) */
   .filter-chip {
     font-size: 13px;
-    padding: 8px 14px;
+    padding: 10px 14px;
     min-height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     touch-action: manipulation;
     flex: 1 1 calc(50% - 10px);
-    justify-content: center;
     text-align: center;
+    box-sizing: border-box;
   }
+}
 
   /* Stack dropdowns vertically - scoped to filter row only */
   
