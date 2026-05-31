@@ -751,27 +751,16 @@
 /* ===== MOBILE FILTER RESPONSIVENESS FIX ===== */
 
 @media (max-width: 768px) {
-
-  /* Language pills */
-  .pill {
-    font-size: 13px;
-    padding: 6px 12px;
-    min-height: 44px;
-    touch-action: manipulation;
-  }
-
-  /* Filter chips (Veterans, Newcomers etc.) */
-  .filter-chip {
+  #orgs .filter-chip {
     font-size: 13px;
     padding: 8px 14px;
     min-height: 44px;
     touch-action: manipulation;
-    flex: 1 1 calc(50% - 10px);
+    flex: 1 1 calc(50% - 4px);
     justify-content: center;
     text-align: center;
   }
-
-  /* Stack dropdowns vertically - scoped to filter row only */
+}
   
   #orgs div.flex.items-center.gap-4 {
   flex-direction: column;
