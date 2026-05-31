@@ -773,20 +773,17 @@
 
   /* Stack dropdowns vertically - scoped to filter row only */
   
-  #orgs div.flex.items-center.gap-4 {
-  flex-direction: column;
-  align-items: stretch !important;
-  gap: 8px;
-  width: 100%;
-}
-
-  /* Full width dropdowns */
-  select.bg-surface-container-low {
-    width: 100% !important;
-    min-width: unset !important;
-    font-size: 14px !important;
+  @media (max-width: 480px) {
+  #orgs .pill {
+    font-size: 12px;
+    padding: 5px 10px;
     min-height: 44px;
-    padding: 8px 12px;
+  }
+
+  #orgs .filter-chip {
+    font-size: 12px;
+    padding: 6px 10px;
+    min-height: 44px;
   }
 }
 
